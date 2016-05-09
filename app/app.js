@@ -13,6 +13,7 @@ var ionic_native_1 = require('ionic-native');
 var tabs_1 = require('./pages/tabs/tabs');
 var MyApp = (function () {
     function MyApp(platform) {
+        //Root page
         this.rootPage = tabs_1.TabsPage;
         platform.ready().then(function () {
             // Okay, so the platform is ready and our plugins are available.

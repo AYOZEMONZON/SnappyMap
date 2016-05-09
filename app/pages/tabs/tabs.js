@@ -12,6 +12,7 @@ var ionic_angular_1 = require('ionic-angular');
 var page1_1 = require('../page1/page1');
 var page2_1 = require('../page2/page2');
 var page3_1 = require('../page3/page3');
+var map_1 = require('../map/map');
 var TabsPage = (function () {
     function TabsPage() {
         // this tells the tabs component which Pages
@@ -19,6 +20,7 @@ var TabsPage = (function () {
         this.tab1Root = page1_1.Page1;
         this.tab2Root = page2_1.Page2;
         this.tab3Root = page3_1.Page3;
+        this.tab4Root = map_1.Map;
     }
     TabsPage = __decorate([
         ionic_angular_1.Page({
