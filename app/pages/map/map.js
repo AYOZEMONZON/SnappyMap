@@ -9,25 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var ionic_angular_1 = require('ionic-angular');
-var page1_1 = require('../page1/page1');
-var page2_1 = require('../page2/page2');
-var page3_1 = require('../page3/page3');
-var map_1 = require('../map/map');
-var TabsPage = (function () {
-    function TabsPage() {
-        // this tells the tabs component which Pages
-        // should be each tab's root Page
-        this.tab1Root = page1_1.Page1;
-        this.tab2Root = page2_1.Page2;
-        this.tab3Root = page3_1.Page3;
-        this.tab4Root = map_1.Map;
+var map_component_1 = require('./../../components/map.component');
+var Map = (function () {
+    function Map() {
     }
-    TabsPage = __decorate([
+    Map = __decorate([
         ionic_angular_1.Page({
-            templateUrl: 'build/pages/tabs/tabs.html'
+            templateUrl: 'build/pages/map/map.html',
+            directives: [map_component_1.MapComponent]
         }), 
         __metadata('design:paramtypes', [])
-    ], TabsPage);
-    return TabsPage;
+    ], Map);
+    return Map;
 }());
-exports.TabsPage = TabsPage;
+exports.Map = Map;
