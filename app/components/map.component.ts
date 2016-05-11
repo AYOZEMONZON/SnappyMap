@@ -1,7 +1,5 @@
 import {Component, Input, ViewChild, Renderer, Query, QueryList, ElementRef} from 'angular2/core';
 import {IONIC_DIRECTIVES} from 'ionic-angular';
-//AMQP for RabbitMQ
-//import * as Amqp from 'amqp-ts';
 
 declare var ol: any;
 
