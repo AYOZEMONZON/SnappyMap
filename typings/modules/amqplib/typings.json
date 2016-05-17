@@ -1,0 +1,12 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "https://raw.githubusercontent.com/louy/typed-amqplib/9c1cccc22621c4dcba6f551023928a14be5b5496/typings.json",
+    "raw": "registry:npm/amqplib#0.4.1+20160401203933",
+    "main": "index.d.ts",
+    "version": false,
+    "global": false,
+    "name": "amqplib",
+    "type": "typings"
+  }
+}
