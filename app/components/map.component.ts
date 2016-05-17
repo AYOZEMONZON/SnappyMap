@@ -1,4 +1,4 @@
-import {Component, Input, ViewChild, Renderer, Query, QueryList, ElementRef} from 'angular2/core';
+import {Component} from 'angular2/core';
 import {IONIC_DIRECTIVES} from 'ionic-angular';
 import * as amqp from 'amqplib/callback_api';
 
@@ -17,10 +17,7 @@ declare var ol: any;
 
 export class MapComponent {
 	
-	centerPosition: any;
-	@ViewChild('map') mapElement;
-
-	constructor(public renderer: Renderer) {}
+	constructor() {}
 	
 	//map is updated once the view has been initialized
 	ngAfterViewInit() {
