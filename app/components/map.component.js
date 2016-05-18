@@ -11,8 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('angular2/core');
 var ionic_angular_1 = require('ionic-angular');
 var MapComponent = (function () {
-    function MapComponent(renderer) {
-        this.renderer = renderer;
+    function MapComponent() {
     }
     //map is updated once the view has been initialized
     MapComponent.prototype.ngAfterViewInit = function () {
@@ -98,11 +97,9 @@ var MapComponent = (function () {
             interactions: ol.interaction.defaults({ altShiftDragRotate: false, pinchRotate: false })
         });
         map.addControl(new ol.control.ZoomSlider());
+        //RabbitMQ test
+        //var connection = new Amqp.Connection("amqp://localhost");
     };
-    __decorate([
-        core_1.ViewChild('map'), 
-        __metadata('design:type', Object)
-    ], MapComponent.prototype, "mapElement", void 0);
     MapComponent = __decorate([
         core_1.Component({
             selector: 'map-component',
@@ -110,7 +107,7 @@ var MapComponent = (function () {
             styles: ["\n\t.map {\n\t\twidth: 100%;\n\t\theight: 100%;\n\t}"],
             directives: [ionic_angular_1.IONIC_DIRECTIVES] // makes all Ionic directives available to your component
         }), 
-        __metadata('design:paramtypes', [core_1.Renderer])
+        __metadata('design:paramtypes', [])
     ], MapComponent);
     return MapComponent;
 }());

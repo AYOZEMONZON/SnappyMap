@@ -22,7 +22,7 @@
     <AppXManifest Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\build\windows\debug\anycpu\win10\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-17T14:28:44.637</Modified>
+      <Modified>2016-05-18T07:53:53.770</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -71,199 +71,199 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\build\css\app.ios.css">
       <PackagePath>www\build\css\app.ios.css</PackagePath>
-      <Modified>2016-05-17T14:28:43.521</Modified>
+      <Modified>2016-05-18T07:53:52.305</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\build\css\app.md.css">
       <PackagePath>www\build\css\app.md.css</PackagePath>
-      <Modified>2016-05-17T14:28:43.537</Modified>
+      <Modified>2016-05-18T07:53:52.321</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\build\css\app.wp.css">
       <PackagePath>www\build\css\app.wp.css</PackagePath>
-      <Modified>2016-05-17T14:28:43.537</Modified>
+      <Modified>2016-05-18T07:53:52.336</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\lib\css\ol.css">
       <PackagePath>www\lib\css\ol.css</PackagePath>
-      <Modified>2016-05-17T14:28:43.818</Modified>
+      <Modified>2016-05-18T07:53:52.806</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\build\fonts\ionicons.ttf">
       <PackagePath>www\build\fonts\ionicons.ttf</PackagePath>
-      <Modified>2016-05-17T14:28:42.367</Modified>
+      <Modified>2016-05-18T07:53:50.828</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\build\fonts\noto-sans-bold.ttf">
       <PackagePath>www\build\fonts\noto-sans-bold.ttf</PackagePath>
-      <Modified>2016-05-17T14:28:42.382</Modified>
+      <Modified>2016-05-18T07:53:50.843</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\build\fonts\noto-sans-regular.ttf">
       <PackagePath>www\build\fonts\noto-sans-regular.ttf</PackagePath>
-      <Modified>2016-05-17T14:28:42.382</Modified>
+      <Modified>2016-05-18T07:53:50.843</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\build\fonts\roboto-bold.ttf">
       <PackagePath>www\build\fonts\roboto-bold.ttf</PackagePath>
-      <Modified>2016-05-17T14:28:42.398</Modified>
+      <Modified>2016-05-18T07:53:50.843</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\build\fonts\roboto-light.ttf">
       <PackagePath>www\build\fonts\roboto-light.ttf</PackagePath>
-      <Modified>2016-05-17T14:28:42.398</Modified>
+      <Modified>2016-05-18T07:53:50.859</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\build\fonts\roboto-medium.ttf">
       <PackagePath>www\build\fonts\roboto-medium.ttf</PackagePath>
-      <Modified>2016-05-17T14:28:42.419</Modified>
+      <Modified>2016-05-18T07:53:50.875</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\build\fonts\roboto-regular.ttf">
       <PackagePath>www\build\fonts\roboto-regular.ttf</PackagePath>
-      <Modified>2016-05-17T14:28:42.429</Modified>
+      <Modified>2016-05-18T07:53:50.875</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\build\fonts\ionicons.woff">
       <PackagePath>www\build\fonts\ionicons.woff</PackagePath>
-      <Modified>2016-05-17T14:28:42.367</Modified>
+      <Modified>2016-05-18T07:53:50.828</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\build\fonts\roboto-bold.woff">
       <PackagePath>www\build\fonts\roboto-bold.woff</PackagePath>
-      <Modified>2016-05-17T14:28:42.398</Modified>
+      <Modified>2016-05-18T07:53:50.859</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\build\fonts\roboto-light.woff">
       <PackagePath>www\build\fonts\roboto-light.woff</PackagePath>
-      <Modified>2016-05-17T14:28:42.398</Modified>
+      <Modified>2016-05-18T07:53:50.859</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\build\fonts\roboto-medium.woff">
       <PackagePath>www\build\fonts\roboto-medium.woff</PackagePath>
-      <Modified>2016-05-17T14:28:42.424</Modified>
+      <Modified>2016-05-18T07:53:50.875</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\build\fonts\roboto-regular.woff">
       <PackagePath>www\build\fonts\roboto-regular.woff</PackagePath>
-      <Modified>2016-05-17T14:28:42.436</Modified>
+      <Modified>2016-05-18T07:53:50.890</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\build\fonts\ionicons.woff2">
       <PackagePath>www\build\fonts\ionicons.woff2</PackagePath>
-      <Modified>2016-05-17T14:28:42.382</Modified>
+      <Modified>2016-05-18T07:53:50.828</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\build\js\angular2-polyfills.js">
       <PackagePath>www\build\js\angular2-polyfills.js</PackagePath>
-      <Modified>2016-05-17T14:28:43.568</Modified>
+      <Modified>2016-05-18T07:53:52.352</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\build\js\app.bundle.js">
       <PackagePath>www\build\js\app.bundle.js</PackagePath>
-      <Modified>2016-05-17T14:28:43.782</Modified>
+      <Modified>2016-05-18T07:53:52.721</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\build\js\es6-shim.min.js">
       <PackagePath>www\build\js\es6-shim.min.js</PackagePath>
-      <Modified>2016-05-17T14:28:43.806</Modified>
+      <Modified>2016-05-18T07:53:52.753</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\cordova-js-src\exec.js">
       <PackagePath>www\cordova-js-src\exec.js</PackagePath>
-      <Modified>2016-05-17T14:28:43.816</Modified>
+      <Modified>2016-05-18T07:53:52.784</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\cordova-js-src\platform.js">
       <PackagePath>www\cordova-js-src\platform.js</PackagePath>
-      <Modified>2016-05-17T14:28:43.817</Modified>
+      <Modified>2016-05-18T07:53:52.802</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\cordova.js">
       <PackagePath>www\cordova.js</PackagePath>
-      <Modified>2016-05-17T14:28:42.799</Modified>
+      <Modified>2016-05-18T07:53:51.334</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\cordova_plugins.js">
       <PackagePath>www\cordova_plugins.js</PackagePath>
-      <Modified>2016-05-17T14:28:43.818</Modified>
+      <Modified>2016-05-18T07:53:52.806</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\lib\js\ol.js">
       <PackagePath>www\lib\js\ol.js</PackagePath>
-      <Modified>2016-05-17T14:28:43.921</Modified>
+      <Modified>2016-05-18T07:53:52.906</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\plugins\cordova-plugin-console\www\console-via-logger.js">
       <PackagePath>www\plugins\cordova-plugin-console\www\console-via-logger.js</PackagePath>
-      <Modified>2016-05-17T14:28:43.921</Modified>
+      <Modified>2016-05-18T07:53:52.922</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\plugins\cordova-plugin-console\www\logger.js">
       <PackagePath>www\plugins\cordova-plugin-console\www\logger.js</PackagePath>
-      <Modified>2016-05-17T14:28:43.937</Modified>
+      <Modified>2016-05-18T07:53:52.922</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\plugins\cordova-plugin-device\src\windows\DeviceProxy.js">
       <PackagePath>www\plugins\cordova-plugin-device\src\windows\DeviceProxy.js</PackagePath>
-      <Modified>2016-05-17T14:28:43.937</Modified>
+      <Modified>2016-05-18T07:53:52.938</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\plugins\cordova-plugin-device\www\device.js">
       <PackagePath>www\plugins\cordova-plugin-device\www\device.js</PackagePath>
-      <Modified>2016-05-17T14:28:43.956</Modified>
+      <Modified>2016-05-18T07:53:52.938</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\plugins\cordova-plugin-geolocation\src\windows\GeolocationProxy.js">
       <PackagePath>www\plugins\cordova-plugin-geolocation\src\windows\GeolocationProxy.js</PackagePath>
-      <Modified>2016-05-17T14:28:43.957</Modified>
+      <Modified>2016-05-18T07:53:52.953</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\plugins\cordova-plugin-geolocation\www\Coordinates.js">
       <PackagePath>www\plugins\cordova-plugin-geolocation\www\Coordinates.js</PackagePath>
-      <Modified>2016-05-17T14:28:43.958</Modified>
+      <Modified>2016-05-18T07:53:52.953</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\plugins\cordova-plugin-geolocation\www\geolocation.js">
       <PackagePath>www\plugins\cordova-plugin-geolocation\www\geolocation.js</PackagePath>
-      <Modified>2016-05-17T14:28:43.967</Modified>
+      <Modified>2016-05-18T07:53:52.969</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\plugins\cordova-plugin-geolocation\www\Position.js">
       <PackagePath>www\plugins\cordova-plugin-geolocation\www\Position.js</PackagePath>
-      <Modified>2016-05-17T14:28:43.968</Modified>
+      <Modified>2016-05-18T07:53:52.969</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\plugins\cordova-plugin-geolocation\www\PositionError.js">
       <PackagePath>www\plugins\cordova-plugin-geolocation\www\PositionError.js</PackagePath>
-      <Modified>2016-05-17T14:28:43.968</Modified>
+      <Modified>2016-05-18T07:53:52.984</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\plugins\cordova-plugin-splashscreen\www\splashscreen.js">
       <PackagePath>www\plugins\cordova-plugin-splashscreen\www\splashscreen.js</PackagePath>
-      <Modified>2016-05-17T14:28:43.968</Modified>
+      <Modified>2016-05-18T07:53:52.984</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\plugins\cordova-plugin-splashscreen\www\windows\SplashScreenProxy.js">
       <PackagePath>www\plugins\cordova-plugin-splashscreen\www\windows\SplashScreenProxy.js</PackagePath>
-      <Modified>2016-05-17T14:28:43.968</Modified>
+      <Modified>2016-05-18T07:53:53.007</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\plugins\cordova-plugin-statusbar\src\windows\StatusBarProxy.js">
       <PackagePath>www\plugins\cordova-plugin-statusbar\src\windows\StatusBarProxy.js</PackagePath>
-      <Modified>2016-05-17T14:28:43.968</Modified>
+      <Modified>2016-05-18T07:53:53.022</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\plugins\cordova-plugin-statusbar\www\statusbar.js">
       <PackagePath>www\plugins\cordova-plugin-statusbar\www\statusbar.js</PackagePath>
-      <Modified>2016-05-17T14:28:43.968</Modified>
+      <Modified>2016-05-18T07:53:53.022</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\plugins\ionic-plugin-keyboard\src\windows\KeyboardProxy.js">
       <PackagePath>www\plugins\ionic-plugin-keyboard\src\windows\KeyboardProxy.js</PackagePath>
-      <Modified>2016-05-17T14:28:43.968</Modified>
+      <Modified>2016-05-18T07:53:53.022</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\WinJS\js\base.js">
       <PackagePath>www\WinJS\js\base.js</PackagePath>
-      <Modified>2016-05-17T14:28:42.914</Modified>
+      <Modified>2016-05-18T07:53:51.620</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\build\js\app.bundle.js.map">
       <PackagePath>www\build\js\app.bundle.js.map</PackagePath>
-      <Modified>2016-05-17T14:28:42.629</Modified>
+      <Modified>2016-05-18T07:53:51.196</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\build\pages\map\map.html">
       <PackagePath>www\build\pages\map\map.html</PackagePath>
-      <Modified>2016-05-17T14:28:43.807</Modified>
+      <Modified>2016-05-18T07:53:52.753</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\build\pages\page1\page1.html">
       <PackagePath>www\build\pages\page1\page1.html</PackagePath>
-      <Modified>2016-05-17T14:28:43.808</Modified>
+      <Modified>2016-05-18T07:53:52.768</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\build\pages\page2\page2.html">
       <PackagePath>www\build\pages\page2\page2.html</PackagePath>
-      <Modified>2016-05-17T14:28:43.809</Modified>
+      <Modified>2016-05-18T07:53:52.768</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\build\pages\page3\page3.html">
       <PackagePath>www\build\pages\page3\page3.html</PackagePath>
-      <Modified>2016-05-17T14:28:43.814</Modified>
+      <Modified>2016-05-18T07:53:52.768</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\build\pages\tabs\tabs.html">
       <PackagePath>www\build\pages\tabs\tabs.html</PackagePath>
-      <Modified>2016-05-17T14:28:43.815</Modified>
+      <Modified>2016-05-18T07:53:52.784</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\www\index.html">
       <PackagePath>www\index.html</PackagePath>
-      <Modified>2016-05-17T14:28:43.350</Modified>
+      <Modified>2016-05-18T07:53:52.036</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\config.xml">
       <PackagePath>config.xml</PackagePath>
-      <Modified>2016-05-17T14:28:42.309</Modified>
+      <Modified>2016-05-18T07:53:50.772</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\build\windows\debug\anycpu\win10\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-05-17T14:28:44.469</Modified>
+      <Modified>2016-05-18T07:53:53.506</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
