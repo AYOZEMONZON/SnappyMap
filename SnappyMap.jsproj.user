@@ -8,4 +8,8 @@
     <DebuggerFlavor>AndroidEmulator</DebuggerFlavor>
     <AndroidEmulatorID>226C76AC-9E9A-4EBD-A495-79E8C5C5292F;VS Emulator 7" KitKat (4.4) XHDPI Tablet</AndroidEmulatorID>
   </PropertyGroup>
+  <PropertyGroup>
+    <ReferenceCachePath>C:\Users\ayoze\AppData\Local\Temp\tayczwff_SnappyMap_refcache</ReferenceCachePath>
+    <ShowAllFiles>true</ShowAllFiles>
+  </PropertyGroup>
 </Project>
