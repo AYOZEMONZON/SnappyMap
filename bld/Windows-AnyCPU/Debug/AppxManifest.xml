@@ -8,7 +8,7 @@
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
   <Identity Name="com.ionicframework.snappymappy728356" Publisher="CN=Apache Cordova Team" Version="0.0.1.0" ProcessorArchitecture="neutral" />
-  <mp:PhoneIdentity PhoneProductId="8570f4e0-1686-11e6-a370-41860604ad30" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <mp:PhoneIdentity PhoneProductId="27d657d0-1c0d-11e6-8bb3-6374ba8e8d0b" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>SnappyMappy</DisplayName>
     <PublisherDisplayName>Ionic Framework Team</PublisherDisplayName>

@@ -1,9 +1,10 @@
+/// <binding BeforeBuild='clean, build' />
 var gulp = require('gulp'),
     gulpWatch = require('gulp-watch'),
     del = require('del'),
     runSequence = require('run-sequence'),
-    argv = process.argv;
-
+    argv = process.argv,
+    Promise = require('es6-promise').Promise;
 
 /**
  * Ionic hooks

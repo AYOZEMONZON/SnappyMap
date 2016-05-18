@@ -8,7 +8,7 @@
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
     <SolutionConfiguration>debug|anycpu</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
-    <PackageIdentityName>8570f4e0-1686-11e6-a370-41860604ad30</PackageIdentityName>
+    <PackageIdentityName>27d657d0-1c0d-11e6-8bb3-6374ba8e8d0b</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\anton\Source\Repos\SnappyMap\platforms\windows\build\windows\bld\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>

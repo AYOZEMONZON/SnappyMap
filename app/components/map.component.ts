@@ -1,7 +1,6 @@
-import {Component, Input, ViewChild, Renderer, Query, QueryList, ElementRef} from 'angular2/core';
+import {Component} from 'angular2/core';
 import {IONIC_DIRECTIVES} from 'ionic-angular';
-//AMQP for RabbitMQ
-//import * as Amqp from 'amqp-ts';
+import * as Amqp from "amqp-ts";
 
 declare var ol: any;
 
@@ -17,18 +16,16 @@ declare var ol: any;
 })
 
 export class MapComponent {
-	
-	centerPosition: any;
-	@ViewChild('map') mapElement;
 
-	constructor(public renderer: Renderer) {}
+    constructor() {}
 	
 	//map is updated once the view has been initialized
 	ngAfterViewInit() {
 		var firstPosition = true;
 		var layersList = [];
 		var projection = ol.proj.get('EPSG:3857');
-		
+
+
 		//SET geolocation
 		var geolocation = new ol.Geolocation({
 			projection: projection,
@@ -120,8 +117,12 @@ export class MapComponent {
 				attribution:false
 			}),
 			interactions: ol.interaction.defaults({altShiftDragRotate:false, pinchRotate:false})
-		});
-		map.addControl(new ol.control.ZoomSlider());
+        });
+        map.addControl(new ol.control.ZoomSlider());
+
+        //RabbitMQ test
+        //var connection = new Amqp.Connection("amqp://localhost");
+
 	}
 	
 }
