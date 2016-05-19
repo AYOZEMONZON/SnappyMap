@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>ICU-900</Machine>
+    <WindowsUser>ayoze</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>debug|anycpu</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>7dc680c0-1d02-11e6-8702-8f42042cf436</PackageIdentityName>
+    <IntermediateOutputPath>C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\build\windows\bld\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>E85BC45C51AA0DB2F113C6E81A338DBF8B0AE6A0A11379DE8214354CBB6BF114</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>com.ionicframework.snappymappy728356_0.0.1.0_neutral__h35559jr9hy9m</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>com.ionicframework.snappymappy728356_h35559jr9hy9m!com.ionicframework.snappymappy728356</RegisteredUserModeAppID>
+    <RegisteredPackageID>com.ionicframework.snappymappy728356</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Apache Cordova Team</RegisteredPackagePublisher>
+    <RegisteredVersion>0.0.1.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\build\windows\debug\anycpu\win10\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-05-19T09:25:41.526</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\images\SplashScreen.scale-100.png">
+      <PackagePath>images\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-05-18T14:12:02.099</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\images\Square150x150Logo.scale-100.png">
+      <PackagePath>images\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-05-18T14:12:02.099</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\images\Square30x30Logo.scale-100.png">
+      <PackagePath>images\Square30x30Logo.scale-100.png</PackagePath>
+      <Modified>2016-05-18T14:12:02.099</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\images\Square310x310Logo.scale-100.png">
+      <PackagePath>images\Square310x310Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-05-18T14:12:02.115</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\images\Square44x44Logo.scale-100.png">
+      <PackagePath>images\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-05-18T14:12:02.117</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\images\Square70x70Logo.scale-100.png">
+      <PackagePath>images\Square70x70Logo.scale-100.png</PackagePath>
+      <Modified>2016-05-18T14:12:02.120</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\images\Square71x71Logo.scale-100.png">
+      <PackagePath>images\Square71x71Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-05-18T14:12:02.121</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\images\StoreLogo.scale-100.png">
+      <PackagePath>images\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-05-18T14:12:02.121</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\images\Wide310x150Logo.scale-100.png">
+      <PackagePath>images\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-05-18T14:12:02.121</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\build\css\app.ios.css">
+      <PackagePath>www\build\css\app.ios.css</PackagePath>
+      <Modified>2016-05-19T09:25:40.519</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\build\css\app.md.css">
+      <PackagePath>www\build\css\app.md.css</PackagePath>
+      <Modified>2016-05-19T09:25:40.527</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\build\css\app.wp.css">
+      <PackagePath>www\build\css\app.wp.css</PackagePath>
+      <Modified>2016-05-19T09:25:40.534</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\build\fonts\ionicons.ttf">
+      <PackagePath>www\build\fonts\ionicons.ttf</PackagePath>
+      <Modified>2016-05-19T09:25:39.583</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\build\fonts\noto-sans-bold.ttf">
+      <PackagePath>www\build\fonts\noto-sans-bold.ttf</PackagePath>
+      <Modified>2016-05-19T09:25:39.599</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\build\fonts\noto-sans-regular.ttf">
+      <PackagePath>www\build\fonts\noto-sans-regular.ttf</PackagePath>
+      <Modified>2016-05-19T09:25:39.603</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\build\fonts\roboto-bold.ttf">
+      <PackagePath>www\build\fonts\roboto-bold.ttf</PackagePath>
+      <Modified>2016-05-19T09:25:39.608</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\build\fonts\roboto-light.ttf">
+      <PackagePath>www\build\fonts\roboto-light.ttf</PackagePath>
+      <Modified>2016-05-19T09:25:39.617</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\build\fonts\roboto-medium.ttf">
+      <PackagePath>www\build\fonts\roboto-medium.ttf</PackagePath>
+      <Modified>2016-05-19T09:25:39.626</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\build\fonts\roboto-regular.ttf">
+      <PackagePath>www\build\fonts\roboto-regular.ttf</PackagePath>
+      <Modified>2016-05-19T09:25:39.635</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\build\fonts\ionicons.woff">
+      <PackagePath>www\build\fonts\ionicons.woff</PackagePath>
+      <Modified>2016-05-19T09:25:39.587</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\build\fonts\roboto-bold.woff">
+      <PackagePath>www\build\fonts\roboto-bold.woff</PackagePath>
+      <Modified>2016-05-19T09:25:39.612</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\build\fonts\roboto-light.woff">
+      <PackagePath>www\build\fonts\roboto-light.woff</PackagePath>
+      <Modified>2016-05-19T09:25:39.621</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\build\fonts\roboto-medium.woff">
+      <PackagePath>www\build\fonts\roboto-medium.woff</PackagePath>
+      <Modified>2016-05-19T09:25:39.630</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\build\fonts\roboto-regular.woff">
+      <PackagePath>www\build\fonts\roboto-regular.woff</PackagePath>
+      <Modified>2016-05-19T09:25:39.640</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\build\fonts\ionicons.woff2">
+      <PackagePath>www\build\fonts\ionicons.woff2</PackagePath>
+      <Modified>2016-05-19T09:25:39.591</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\build\js\angular2-polyfills.js">
+      <PackagePath>www\build\js\angular2-polyfills.js</PackagePath>
+      <Modified>2016-05-19T09:25:40.548</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\build\js\app.bundle.js">
+      <PackagePath>www\build\js\app.bundle.js</PackagePath>
+      <Modified>2016-05-19T09:25:40.874</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\build\js\es6-shim.min.js">
+      <PackagePath>www\build\js\es6-shim.min.js</PackagePath>
+      <Modified>2016-05-19T09:25:40.904</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\cordova-js-src\exec.js">
+      <PackagePath>www\cordova-js-src\exec.js</PackagePath>
+      <Modified>2016-05-19T09:25:40.911</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\cordova-js-src\platform.js">
+      <PackagePath>www\cordova-js-src\platform.js</PackagePath>
+      <Modified>2016-05-19T09:25:40.913</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\cordova.js">
+      <PackagePath>www\cordova.js</PackagePath>
+      <Modified>2016-05-19T09:25:39.917</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\cordova_plugins.js">
+      <PackagePath>www\cordova_plugins.js</PackagePath>
+      <Modified>2016-05-19T09:25:40.914</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\plugins\cordova-plugin-console\www\console-via-logger.js">
+      <PackagePath>www\plugins\cordova-plugin-console\www\console-via-logger.js</PackagePath>
+      <Modified>2016-05-19T09:25:40.927</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\plugins\cordova-plugin-console\www\logger.js">
+      <PackagePath>www\plugins\cordova-plugin-console\www\logger.js</PackagePath>
+      <Modified>2016-05-19T09:25:40.936</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\plugins\cordova-plugin-device\src\windows\DeviceProxy.js">
+      <PackagePath>www\plugins\cordova-plugin-device\src\windows\DeviceProxy.js</PackagePath>
+      <Modified>2016-05-19T09:25:40.938</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\plugins\cordova-plugin-device\www\device.js">
+      <PackagePath>www\plugins\cordova-plugin-device\www\device.js</PackagePath>
+      <Modified>2016-05-19T09:25:40.939</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\plugins\cordova-plugin-splashscreen\www\splashscreen.js">
+      <PackagePath>www\plugins\cordova-plugin-splashscreen\www\splashscreen.js</PackagePath>
+      <Modified>2016-05-19T09:25:40.940</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\plugins\cordova-plugin-splashscreen\www\windows\SplashScreenProxy.js">
+      <PackagePath>www\plugins\cordova-plugin-splashscreen\www\windows\SplashScreenProxy.js</PackagePath>
+      <Modified>2016-05-19T09:25:40.942</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\plugins\cordova-plugin-statusbar\src\windows\StatusBarProxy.js">
+      <PackagePath>www\plugins\cordova-plugin-statusbar\src\windows\StatusBarProxy.js</PackagePath>
+      <Modified>2016-05-19T09:25:40.943</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\plugins\cordova-plugin-statusbar\www\statusbar.js">
+      <PackagePath>www\plugins\cordova-plugin-statusbar\www\statusbar.js</PackagePath>
+      <Modified>2016-05-19T09:25:40.946</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\plugins\ionic-plugin-keyboard\src\windows\KeyboardProxy.js">
+      <PackagePath>www\plugins\ionic-plugin-keyboard\src\windows\KeyboardProxy.js</PackagePath>
+      <Modified>2016-05-19T09:25:40.947</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\WinJS\js\base.js">
+      <PackagePath>www\WinJS\js\base.js</PackagePath>
+      <Modified>2016-05-19T09:25:40.062</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\build\js\app.bundle.js.map">
+      <PackagePath>www\build\js\app.bundle.js.map</PackagePath>
+      <Modified>2016-05-19T09:25:39.866</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\build\pages\page1\page1.html">
+      <PackagePath>www\build\pages\page1\page1.html</PackagePath>
+      <Modified>2016-05-19T09:25:40.905</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\build\pages\page2\page2.html">
+      <PackagePath>www\build\pages\page2\page2.html</PackagePath>
+      <Modified>2016-05-19T09:25:40.906</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\build\pages\page3\page3.html">
+      <PackagePath>www\build\pages\page3\page3.html</PackagePath>
+      <Modified>2016-05-19T09:25:40.907</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\build\pages\tabs\tabs.html">
+      <PackagePath>www\build\pages\tabs\tabs.html</PackagePath>
+      <Modified>2016-05-19T09:25:40.908</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\www\index.html">
+      <PackagePath>www\index.html</PackagePath>
+      <Modified>2016-05-19T09:25:40.915</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\config.xml">
+      <PackagePath>config.xml</PackagePath>
+      <Modified>2016-05-19T09:25:39.538</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\APPs\ionic2Markus\SnappyMap\SnappyMap\platforms\windows\build\windows\debug\anycpu\win10\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2016-05-19T09:25:41.393</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
