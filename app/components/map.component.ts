@@ -1,6 +1,5 @@
 import {Component} from 'angular2/core';
 import {IONIC_DIRECTIVES} from 'ionic-angular';
-import * as Amqp from "amqp-ts";
 
 declare var ol: any;
 
@@ -119,10 +118,7 @@ export class MapComponent {
 			interactions: ol.interaction.defaults({altShiftDragRotate:false, pinchRotate:false})
         });
         map.addControl(new ol.control.ZoomSlider());
-
-        //RabbitMQ test
-        //var connection = new Amqp.Connection("amqp://localhost");
-
+        
 	}
 	
 }
