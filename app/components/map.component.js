@@ -97,8 +97,6 @@ var MapComponent = (function () {
             interactions: ol.interaction.defaults({ altShiftDragRotate: false, pinchRotate: false })
         });
         map.addControl(new ol.control.ZoomSlider());
-        //RabbitMQ test
-        //var connection = new Amqp.Connection("amqp://localhost");
     };
     MapComponent = __decorate([
         core_1.Component({
