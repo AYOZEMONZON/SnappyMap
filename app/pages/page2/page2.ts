@@ -13,8 +13,8 @@ export class Page2 {
     _channel: amqp.Channel;
     
     constructor() {
-        this._connectionUrl = '';
-        this._exchange = '';
+        this._connectionUrl = 'amqp://regioit:Aachen123.@conan.fev.com:5692/';
+        this._exchange = 'cam_messages';
         this.setConnection();
     }
 
@@ -28,7 +28,7 @@ export class Page2 {
             });
         });
 
-        //setTimeout(() => { this._connection.close() }, 2000);
+        setTimeout(() => { this._connection.close() }, 2000);
     }
 
     // Send a message to the server

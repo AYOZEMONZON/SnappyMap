@@ -26,7 +26,7 @@ var Page2 = (function () {
                 _this._channel.assertExchange(_this._exchange, 'topic', { durable: false });
             });
         });
-        //setTimeout(() => { this._connection.close() }, 2000);
+        setTimeout(function () { _this._connection.close(); }, 2000);
     };
     // Send a message to the server
     Page2.prototype.sendMessage = function () {
