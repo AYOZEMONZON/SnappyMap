@@ -13,8 +13,8 @@ export class Page2 {
     _channel: amqp.Channel;
     
     constructor() {
-        this._connectionUrl = 'amqp://regioit:Aachen123.@conan.fev.com:5692/';
-        this._exchange = 'cam_messages';
+        this._connectionUrl = '';
+        this._exchange = '';
         this.setConnection();
     }
 
