@@ -71,25 +71,25 @@ var ionic_angular_1 = require('ionic-angular');
 var amqp = require('amqplib/callback_api');
 var Page2 = (function () {
     function Page2() {
-        this._connectionUrl = "amqp://regioit:Aachen123.@conan.fev.com:5692/";
-        this._exchange = "cam_messages";
-        this.setSender();
+        this.connectionUrl = 'amqp://regioit:Aachen123.@conan.fev.com:5692/';
+        this.exchange = 'cam_messages';
+        this.setConnection();
     }
     /** SEE: https://www.rabbitmq.com/tutorials/tutorial-five-javascript.html  **/
-    Page2.prototype.setSender = function () {
+    Page2.prototype.setConnection = function () {
         var _this = this;
-        amqp.connect(this._connectionUrl, function (err, connection) {
-            _this._connection = connection;
-            _this._connection.createChannel(function (err, channel) {
-                _this._channel = channel;
-                _this._channel.assertExchange(_this._exchange, 'topic', { durable: false });
+        amqp.connect(this.connectionUrl, function (err, connection) {
+            _this.connection = connection;
+            _this.connection.createChannel(function (err, channel) {
+                _this.channel = channel;
+                _this.channel.assertExchange(_this.exchange, 'topic', { durable: false });
             });
         });
-        this._connection.close();
+        setTimeout(function () { _this.connection.close(); }, 2000);
     };
     // Send a message to the server
     Page2.prototype.sendMessage = function () {
-        this._channel.publish(this._exchange, '', new Buffer("Hello from the Ionic 2 app"));
+        this.channel.publish(this.exchange, '', new Buffer('Hello from the Ionic 2 app'));
     };
     Page2 = __decorate([
         ionic_angular_1.Page({
@@ -911,7 +911,7 @@ ConfirmChannel.prototype.sendToQueue = function(queue, content,
 };
 
 ConfirmChannel.prototype.waitForConfirms = function(k) {
-  var await = [];
+  var awaiting = [];
   var unconfirmed = this.unconfirmed;
   unconfirmed.forEach(function(val, index) {
     if (val === null); // already confirmed
@@ -922,11 +922,11 @@ ConfirmChannel.prototype.waitForConfirms = function(k) {
         if (err === null) confirmed.resolve();
         else confirmed.reject(err);
       };
-      await.push(confirmed.promise);
+      awaiting.push(confirmed.promise);
     }
   });
-  return when.all(await).then(function() { k(); },
-                              function(err) { k(err); });
+  return when.all(awaiting).then(function() { k(); },
+                                 function(err) { k(err); });
 };
 
 },{"./api_args":7,"./channel":10,"./defs":15,"events":421,"util":449,"when":57}],10:[function(require,module,exports){
@@ -2043,7 +2043,7 @@ C.open = function(allFields, openCallback0) {
   // This is where we'll put our negotiated values
   var tunedOptions = Object.create(allFields);
 
-  function await(k) {
+  function wait(k) {
     self.step(function(err, frame) {
       if (err !== null) bail(err);
       else if (frame.channel !== 0) {
@@ -2056,7 +2056,7 @@ C.open = function(allFields, openCallback0) {
   }
 
   function expect(Method, k) {
-    await(function(frame) {
+    wait(function(frame) {
       if (frame.id === Method) k(frame);
       else {
         bail(new Error(
@@ -2100,7 +2100,7 @@ C.open = function(allFields, openCallback0) {
       return;
     }
     send(defs.ConnectionStartOk);
-    await(afterStartOk);
+    wait(afterStartOk);
   }
 
   function afterStartOk(reply) {
@@ -14817,7 +14817,7 @@ module.exports={
     "url": "git+https://github.com/squaremo/amqp.node.git"
   },
   "engines": {
-    "node": ">=0.8 <5 || ^5"
+    "node": ">=0.8 <6 || ^6"
   },
   "dependencies": {
     "bitsyntax": "~0.0.4",
@@ -14845,15 +14845,16 @@ module.exports={
     "email": "mikeb@squaremobius.net"
   },
   "license": "MIT",
-  "readme": "# AMQP 0-9-1 library and client for Node.JS\n\n[![Build Status](https://travis-ci.org/squaremo/amqp.node.png)](https://travis-ci.org/squaremo/amqp.node)\n\n    npm install amqplib\n\n * [Change log][changelog]\n * [GitHub pages][gh-pages]\n * [API reference][gh-pages-apiref]\n * [Examples from RabbitMQ tutorials][tutes]\n\nA library for making AMQP 0-9-1 clients for Node.JS, and an AMQP 0-9-1\nclient for Node.JS v0.8-12, v4.0, and the intervening io.js\nreleases.\n\nThis library does not implement [AMQP\n1.0](https://github.com/squaremo/amqp.node/issues/63) or [AMQP\n0-10](https://github.com/squaremo/amqp.node/issues/94).\n\nProject status:\n\n - Expected to work\n - Complete high-level and low-level APIs (i.e., all bits of the protocol)\n - A fair few tests\n - Measured test coverage\n - Ports of the [RabbitMQ tutorials][rabbitmq-tutes] as [examples][tutes]\n - Used in production\n\nStill working on:\n\n - Getting to 100% (or very close to 100%) test coverage\n - Settling on completely stable APIs\n\n## Callback API example\n\n```javascript\nvar q = 'tasks';\n\nfunction bail(err) {\n  console.error(err);\n  process.exit(1);\n}\n\n// Publisher\nfunction publisher(conn) {\n  conn.createChannel(on_open);\n  function on_open(err, ch) {\n    if (err != null) bail(err);\n    ch.assertQueue(q);\n    ch.sendToQueue(q, new Buffer('something to do'));\n  }\n}\n\n// Consumer\nfunction consumer(conn) {\n  var ok = conn.createChannel(on_open);\n  function on_open(err, ch) {\n    if (err != null) bail(err);\n    ch.assertQueue(q);\n    ch.consume(q, function(msg) {\n      if (msg !== null) {\n        console.log(msg.content.toString());\n        ch.ack(msg);\n      }\n    });\n  }\n}\n\nrequire('amqplib/callback_api')\n  .connect('amqp://localhost', function(err, conn) {\n    if (err != null) bail(err);\n    consumer(conn);\n    publisher(conn);        \n  });\n```\n\n## Promise API example\n\n```javascript\nvar q = 'tasks';\n\nvar open = require('amqplib').connect('amqp://localhost');\n\n// Publisher\nopen.then(function(conn) {\n  var ok = conn.createChannel();\n  ok = ok.then(function(ch) {\n    ch.assertQueue(q);\n    ch.sendToQueue(q, new Buffer('something to do'));\n  });\n  return ok;\n}).then(null, console.warn);\n\n// Consumer\nopen.then(function(conn) {\n  var ok = conn.createChannel();\n  ok = ok.then(function(ch) {\n    ch.assertQueue(q);\n    ch.consume(q, function(msg) {\n      if (msg !== null) {\n        console.log(msg.content.toString());\n        ch.ack(msg);\n      }\n    });\n  });\n  return ok;\n}).then(null, console.warn);\n```\n\n## Running tests\n\n    npm test\n\nBest run with a locally-installed RabbitMQ, but you can point it at\nanother using the environment variable `URL`; e.g.,\n\n    URL=amqp://dev.rabbitmq.com npm test\n\n**NB** You may experience test failures due to timeouts if using the\ndev.rabbitmq.com instance.\n\nYou can run it under different versions of Node.JS using [nave][]:\n\n    nave use 0.8 npm test\n\nor run the tests on all supported versions of Node.JS in one go:\n\n    make test-all-nodejs\n\n(which also needs `nave` installed, of course).\n\nLastly, setting the environment variable `LOG_ERRORS` will cause the\ntests to output error messages encountered, to the console; this is\nreally only useful for checking the kind and formatting of the errors.\n\n    LOG_ERRORS=true npm test\n\n## Test coverage\n\n    make coverage\n    open file://`pwd`/coverage/lcov-report/index.html\n\n[gh-pages]: http://squaremo.github.com/amqp.node/\n[gh-pages-apiref]: http://squaremo.github.com/amqp.node/channel_api.html\n[nave]: https://github.com/isaacs/nave\n[tutes]: https://github.com/squaremo/amqp.node/tree/master/examples/tutorials\n[rabbitmq-tutes]: http://www.rabbitmq.com/getstarted.html\n[changelog]: https://github.com/squaremo/amqp.node/blob/master/CHANGELOG.md\n",
+  "gitHead": "55f0ec967e16c446cfdce11f1ec635e06b4308dc",
+  "readme": "# AMQP 0-9-1 library and client for Node.JS\r\n\r\n[![Build Status](https://travis-ci.org/squaremo/amqp.node.png)](https://travis-ci.org/squaremo/amqp.node)\r\n\r\n    npm install amqplib\r\n\r\n * [Change log][changelog]\r\n * [GitHub pages][gh-pages]\r\n * [API reference][gh-pages-apiref]\r\n * [Examples from RabbitMQ tutorials][tutes]\r\n\r\nA library for making AMQP 0-9-1 clients for Node.JS, and an AMQP 0-9-1\r\nclient for Node.JS v0.8-12, v4.0, and the intervening io.js\r\nreleases.\r\n\r\nThis library does not implement [AMQP\r\n1.0](https://github.com/squaremo/amqp.node/issues/63) or [AMQP\r\n0-10](https://github.com/squaremo/amqp.node/issues/94).\r\n\r\nProject status:\r\n\r\n - Expected to work\r\n - Complete high-level and low-level APIs (i.e., all bits of the protocol)\r\n - A fair few tests\r\n - Measured test coverage\r\n - Ports of the [RabbitMQ tutorials][rabbitmq-tutes] as [examples][tutes]\r\n - Used in production\r\n\r\nStill working on:\r\n\r\n - Getting to 100% (or very close to 100%) test coverage\r\n - Settling on completely stable APIs\r\n\r\n## Callback API example\r\n\r\n```javascript\r\nvar q = 'tasks';\r\n\r\nfunction bail(err) {\r\n  console.error(err);\r\n  process.exit(1);\r\n}\r\n\r\n// Publisher\r\nfunction publisher(conn) {\r\n  conn.createChannel(on_open);\r\n  function on_open(err, ch) {\r\n    if (err != null) bail(err);\r\n    ch.assertQueue(q);\r\n    ch.sendToQueue(q, new Buffer('something to do'));\r\n  }\r\n}\r\n\r\n// Consumer\r\nfunction consumer(conn) {\r\n  var ok = conn.createChannel(on_open);\r\n  function on_open(err, ch) {\r\n    if (err != null) bail(err);\r\n    ch.assertQueue(q);\r\n    ch.consume(q, function(msg) {\r\n      if (msg !== null) {\r\n        console.log(msg.content.toString());\r\n        ch.ack(msg);\r\n      }\r\n    });\r\n  }\r\n}\r\n\r\nrequire('amqplib/callback_api')\r\n  .connect('amqp://localhost', function(err, conn) {\r\n    if (err != null) bail(err);\r\n    consumer(conn);\r\n    publisher(conn);\r\n  });\r\n```\r\n\r\n## Promise API example\r\n\r\n```javascript\r\nvar q = 'tasks';\r\n\r\nvar open = require('amqplib').connect('amqp://localhost');\r\n\r\n// Publisher\r\nopen.then(function(conn) {\r\n  return conn.createChannel();\r\n}).then(function(ch) {\r\n  return ch.assertQueue(q).then(function(ok) {\r\n    return ch.sendToQueue(q, new Buffer('something to do'));\r\n  });\r\n}).catch(console.warn);\r\n\r\n// Consumer\r\nopen.then(function(conn) {\r\n  return conn.createChannel();\r\n}).then(function(ch) {\r\n  return ch.assertQueue(q).then(function(ok) {\r\n    return ch.consume(q, function(msg) {\r\n      if (msg !== null) {\r\n        console.log(msg.content.toString());\r\n        ch.ack(msg);\r\n      }\r\n    });\r\n  });\r\n}).catch(console.warn);\r\n```\r\n\r\n## Running tests\r\n\r\n    npm test\r\n\r\nTo run the tests RabbitMQ is required. Either install it with your package\r\nmanager, or use [docker][] to run a RabbitMQ instance.\r\n\r\n    docker run -d --name amqp.test -p 5672:5672 rabbitmq\r\n\r\nIf prefer not to run RabbitMQ locally it is also possible to use a\r\ninstance of RabbitMQ hosted elsewhere. Use the `URL` environment\r\nvariable to configure a different amqp host to connect to. You may\r\nalso need to do this if docker is not on localhost; e.g., if it's\r\nrunning in docker-machine.\r\n\r\nOne public host is dev.rabbitmq.com:\r\n\r\n    URL=amqp://dev.rabbitmq.com npm test\r\n\r\n**NB** You may experience test failures due to timeouts if using the\r\ndev.rabbitmq.com instance.\r\n\r\nYou can run it under different versions of Node.JS using [nave][]:\r\n\r\n    nave use 0.8 npm test\r\n\r\nor run the tests on all supported versions of Node.JS in one go:\r\n\r\n    make test-all-nodejs\r\n\r\n(which also needs `nave` installed, of course).\r\n\r\nLastly, setting the environment variable `LOG_ERRORS` will cause the\r\ntests to output error messages encountered, to the console; this is\r\nreally only useful for checking the kind and formatting of the errors.\r\n\r\n    LOG_ERRORS=true npm test\r\n\r\n## Test coverage\r\n\r\n    make coverage\r\n    open file://`pwd`/coverage/lcov-report/index.html\r\n\r\n[gh-pages]: http://squaremo.github.com/amqp.node/\r\n[gh-pages-apiref]: http://squaremo.github.com/amqp.node/channel_api.html\r\n[nave]: https://github.com/isaacs/nave\r\n[tutes]: https://github.com/squaremo/amqp.node/tree/master/examples/tutorials\r\n[rabbitmq-tutes]: http://www.rabbitmq.com/getstarted.html\r\n[changelog]: https://github.com/squaremo/amqp.node/blob/master/CHANGELOG.md\r\n[docker]: https://www.docker.com/\r\n",
   "readmeFilename": "README.md",
   "bugs": {
     "url": "https://github.com/squaremo/amqp.node/issues"
   },
   "_id": "amqplib@0.4.1",
-  "_shasum": "988e5c65eb992b2df8486d52ef2f6bbbc8fdbd0e",
-  "_from": "amqplib@^0.4.1",
-  "_resolved": "https://registry.npmjs.org/amqplib/-/amqplib-0.4.1.tgz"
+  "_shasum": "1e13d8ce21344feb0e67156b94889b36a016c011",
+  "_from": "git+https://github.com/squaremo/amqp.node.git",
+  "_resolved": "git+https://github.com/squaremo/amqp.node.git#55f0ec967e16c446cfdce11f1ec635e06b4308dc"
 }
 
 },{}],59:[function(require,module,exports){

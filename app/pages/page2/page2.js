@@ -12,25 +12,25 @@ var ionic_angular_1 = require('ionic-angular');
 var amqp = require('amqplib/callback_api');
 var Page2 = (function () {
     function Page2() {
-        this._connectionUrl = 'amqp://regioit:Aachen123.@conan.fev.com:5692/';
-        this._exchange = 'cam_messages';
+        this.connectionUrl = 'amqp://regioit:Aachen123.@conan.fev.com:5692/';
+        this.exchange = 'cam_messages';
         this.setConnection();
     }
     /** SEE: https://www.rabbitmq.com/tutorials/tutorial-five-javascript.html  **/
     Page2.prototype.setConnection = function () {
         var _this = this;
-        amqp.connect(this._connectionUrl, function (err, connection) {
-            _this._connection = connection;
-            _this._connection.createChannel(function (err, channel) {
-                _this._channel = channel;
-                _this._channel.assertExchange(_this._exchange, 'topic', { durable: false });
+        amqp.connect(this.connectionUrl, function (err, connection) {
+            _this.connection = connection;
+            _this.connection.createChannel(function (err, channel) {
+                _this.channel = channel;
+                _this.channel.assertExchange(_this.exchange, 'topic', { durable: false });
             });
         });
-        setTimeout(function () { _this._connection.close(); }, 2000);
+        setTimeout(function () { _this.connection.close(); }, 2000);
     };
     // Send a message to the server
     Page2.prototype.sendMessage = function () {
-        this._channel.publish(this._exchange, '', new Buffer('Hello from the Ionic 2 app'));
+        this.channel.publish(this.exchange, '', new Buffer('Hello from the Ionic 2 app'));
     };
     Page2 = __decorate([
         ionic_angular_1.Page({

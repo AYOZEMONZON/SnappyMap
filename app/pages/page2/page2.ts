@@ -7,33 +7,40 @@ import * as amqp from 'amqplib/callback_api';
 
 export class Page2 {
     
-    _connectionUrl: string;
-    _exchange: string;
-    _connection: amqp.Connection;
-    _channel: amqp.Channel;
+    connectionUrl: string;
+    exchange: string;
+    connection: amqp.Connection;
+    channel: amqp.Channel;
     
     constructor() {
-        this._connectionUrl = 'amqp://regioit:Aachen123.@conan.fev.com:5692/';
-        this._exchange = 'cam_messages';
-        this.setConnection();
+        this.connectionUrl = 'amqp://user:password.@conan.fev.com:5692/';
+        this.exchange = 'cam_messages';
     }
 
     /** SEE: https://www.rabbitmq.com/tutorials/tutorial-five-javascript.html  **/
     setConnection() {
-        amqp.connect(this._connectionUrl, (err: any, connection: amqp.Connection) => {
-            this._connection = connection;
-            this._connection.createChannel((err: any, channel: amqp.Channel) => {
-                this._channel = channel;
-                this._channel.assertExchange(this._exchange, 'topic', { durable: false });
+        amqp.connect(this.connectionUrl, (err: any, connection: amqp.Connection) => {
+            this.connection = connection;
+            this.connection.createChannel((err: any, channel: amqp.Channel) => {
+                this.channel = channel;
+                this.channel.assertExchange(this.exchange, 'topic', { durable: false });
             });
         });
 
-        setTimeout(() => { this._connection.close() }, 2000);
     }
 
     // Send a message to the server
     sendMessage() {
-        this._channel.publish(this._exchange, '', new Buffer('Hello from the Ionic 2 app'));
+        if (this.channel)
+            this.channel.publish(this.exchange, '', new Buffer('Hello from the Ionic 2 app'));
+    }
+    
+    // Close connection
+    closeConnection(){
+        if (this.connection)
+            this.connection.close();
+        else 
+            console.log("ATTENTION: Connection to the server has not been set yet");
     }
   
 }
