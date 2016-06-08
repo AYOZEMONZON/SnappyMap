@@ -35,10 +35,10 @@ var MapComponent = (function () {
             minZoom: 3
         });
         //set the layer (type of map layout)
-        var layer = new ol.layer.Tile({
+        /*var layer = new ol.layer.Tile({
             source: new ol.source.OSM()
-        });
-        layersList.push(layer);
+        });*/
+        //layersList.push(layer);
         //1. create vector
         var marker = new ol.source.Vector({});
         geolocation.on('change:position', function () {
@@ -88,7 +88,28 @@ var MapComponent = (function () {
         //create the map itself			
         var map = new ol.Map({
             target: "map",
-            layers: layersList,
+            layers: [
+                new ol.layer.Group({
+                    'title': 'Base maps',
+                    layers: [
+                        new ol.layer.Tile({
+                            title: 'Stamen - Toner',
+                            type: 'base',
+                            visible: false,
+                            source: new ol.source.Stamen({
+                                layer: 'toner'
+                            })
+                        }),
+                        new ol.layer.Tile({
+                            title: 'OSM',
+                            type: 'base',
+                            visible: true,
+                            source: new ol.source.OSM()
+                        }),
+                        markerLayer
+                    ],
+                }),
+            ],
             renderer: 'canvas',
             view: view,
             controls: ol.control.defaults({
@@ -97,6 +118,7 @@ var MapComponent = (function () {
             interactions: ol.interaction.defaults({ altShiftDragRotate: false, pinchRotate: false })
         });
         map.addControl(new ol.control.ZoomSlider());
+        map.addControl(new ol.control.LayerSwitcher());
     };
     MapComponent = __decorate([
         core_1.Component({
