@@ -79,31 +79,16 @@ export class MapComponent {
 		
 		//5. create layer with custom marker
 		var markerLayer = new ol.layer.Vector({ source: marker });
-		
+        var osm = new ol.layer.Tile({
+            source: new ol.source.OSM()
+        })
+
 		//create the map itself			
 		var map = new ol.Map({
 			target: "map",
             layers: [
-                new ol.layer.Group({
-                    'title': 'Base maps',
-                    layers: [
-                        new ol.layer.Tile({
-                            title: 'Stamen - Toner',
-                            type: 'base',
-                            visible: false,
-                            source: new ol.source.Stamen({
-                                layer: 'toner'
-                            })
-                        }),
-                        new ol.layer.Tile({
-                            title: 'OSM',
-                            type: 'base',
-                            visible: true,
-                            source: new ol.source.OSM()
-                        }),
-                        markerLayer                                
-                    ],                       
-                }),
+                osm,
+                markerLayer
             ],            
 			renderer: 'canvas',
 			view: view,
@@ -115,7 +100,22 @@ export class MapComponent {
 
         // adding custom controls
         map.addControl(new ol.control.ZoomSlider());
-        map.addControl(new ol.control.LayerSwitcher());
-	}
+        // transform the map tile to gray scale
+        osm.on('postcompose', (event) => {
+            this.Canvas2GrayScale(event);
+        });
+    }
+
+    Canvas2GrayScale(event) {
+
+        var context = event.context;
+        var canvas = context.canvas;
+        var image = context.getImageData(0, 0, canvas.width, canvas.height);
+        var data = image.data;
+        for (var i = 0, ii = data.length; i < ii; i += 4) {
+            data[i] = data[i + 1] = data[i + 2] = (3 * data[i] + 4 * data[i + 1] + data[i + 2]) / 8;
+        }
+        context.putImageData(image, 0, 0);
+    }
 	
 }
